@@ -60,10 +60,10 @@ extern "C" {
 /*
  * Class:     com_example_jnitoast_LoginActivity
  * Method:    nativeToast
- * Signature: (Landroid/content/Context;Ljava/lang/String;I)V
+ * Signature: (Ljava/lang/String;I)V
  */
 JNIEXPORT void JNICALL Java_com_example_jnitoast_LoginActivity_nativeToast
-  (JNIEnv *, jobject, jobject, jstring, jint);
+  (JNIEnv *, jobject, jstring, jint);
 
 #ifdef __cplusplus
 }

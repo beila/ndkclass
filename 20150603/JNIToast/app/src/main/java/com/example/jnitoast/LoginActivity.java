@@ -5,8 +5,6 @@ import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.LoaderManager.LoaderCallbacks;
-import android.content.ContentResolver;
-import android.content.Context;
 import android.content.CursorLoader;
 import android.content.Loader;
 import android.database.Cursor;
@@ -19,11 +17,9 @@ import android.provider.ContactsContract;
 import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.inputmethod.EditorInfo;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -90,14 +86,14 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
     }
 
     public void toastShort(View view) {
-        nativeToast(this, mEmailView.getText().toString(), Toast.LENGTH_SHORT);
+        nativeToast(mEmailView.getText().toString(), Toast.LENGTH_SHORT);
     }
 
     public void toastLong(View view) {
-        nativeToast(this, mEmailView.getText().toString(), Toast.LENGTH_LONG);
+        nativeToast(mEmailView.getText().toString(), Toast.LENGTH_LONG);
     }
 
-    native void nativeToast(Context context, String msg, int length);
+    native void nativeToast(String msg, int length);
 
     static {
         System.loadLibrary("jnitoast");
