@@ -6,6 +6,7 @@ import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.LoaderManager.LoaderCallbacks;
 import android.content.ContentResolver;
+import android.content.Context;
 import android.content.CursorLoader;
 import android.content.Loader;
 import android.database.Cursor;
@@ -25,6 +26,7 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -73,6 +75,7 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
             }
         });
 
+/*
         Button mEmailSignInButton = (Button) findViewById(R.id.email_sign_in_button);
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
@@ -80,9 +83,24 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
                 attemptLogin();
             }
         });
+*/
 
         mLoginFormView = findViewById(R.id.login_form);
         mProgressView = findViewById(R.id.login_progress);
+    }
+
+    public void toastShort(View view) {
+        nativeToast(this, mEmailView.getText().toString(), Toast.LENGTH_SHORT);
+    }
+
+    public void toastLong(View view) {
+        nativeToast(this, mEmailView.getText().toString(), Toast.LENGTH_LONG);
+    }
+
+    native void nativeToast(Context context, String msg, int length);
+
+    static {
+        System.loadLibrary("jnitoast");
     }
 
     private void populateAutoComplete() {
@@ -119,7 +137,7 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
         }
 
         // Check for a valid email address.
-        if (TextUtils.isEmpty(email)) {
+/*        if (TextUtils.isEmpty(email)) {
             mEmailView.setError(getString(R.string.error_field_required));
             focusView = mEmailView;
             cancel = true;
@@ -127,7 +145,7 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
             mEmailView.setError(getString(R.string.error_invalid_email));
             focusView = mEmailView;
             cancel = true;
-        }
+        }*/
 
         if (cancel) {
             // There was an error; don't attempt login and focus the first

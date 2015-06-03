@@ -27,12 +27,24 @@
                 android:imeActionId="@+id/login"
                 android:imeActionLabel="@string/action_sign_in_short"
                 android:imeOptions="actionUnspecified" android:inputType="textPassword"
-                android:maxLines="1" android:singleLine="true" />
+                android:maxLines="1" android:singleLine="true"
+                android:visibility="invisible" />
 
             <Button android:id="@+id/email_sign_in_button" style="?android:textAppearanceSmall"
                 android:layout_width="match_parent" android:layout_height="wrap_content"
-                android:layout_marginTop="16dp" android:text="@string/action_sign_in"
-                android:textStyle="bold" />
+                android:layout_marginTop="16dp" android:text="Toast(Short)"
+                android:textStyle="bold"
+                android:onClick="toastShort" />
+
+            <Button
+                style="?android:textAppearanceSmall"
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Toast(Long)"
+                android:textStyle="bold"
+                android:onClick="toastLong" />
 
         </LinearLayout>
     </ScrollView>
