@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/NDKclass4thday.iml" filepath="$PROJECT_DIR$/NDKclass4thday.iml" />
       <module fileurl="file://$PROJECT_DIR$/exceptionTest/exceptionTest.iml" filepath="$PROJECT_DIR$/exceptionTest/exceptionTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/exceptionTest2/exceptionTest2.iml" filepath="$PROJECT_DIR$/exceptionTest2/exceptionTest2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imagetest/imagetest.iml" filepath="$PROJECT_DIR$/imagetest/imagetest.iml" />
     </modules>
   </component>
 </project>
