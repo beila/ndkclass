@@ -10,6 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/exceptionTest" />
+            <option value="$PROJECT_DIR$/exceptionTest2" />
           </set>
         </option>
       </GradleProjectSettings>

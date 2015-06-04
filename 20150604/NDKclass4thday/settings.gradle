@@ -1,1 +1,1 @@
-include ':exceptionTest'
+include ':exceptionTest', ':exceptionTest2'
