@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText android:id="@+id/edit_string"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="60sp"/>
+
+    <Button android:id="@+id/btn_jnitost_short"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="60sp"
+        android:text="JNIToast(Short)"
+        android:onClick="onClick"/>
+
+    <Button android:id="@+id/btn_jnitost_long"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="60sp"
+        android:text="JNIToast(Long)"
+        android:onClick="onClick"/>
+
+</LinearLayout>
