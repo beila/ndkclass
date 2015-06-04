@@ -1,1 +1,1 @@
-include ':exceptionTest', ':exceptionTest2', ':imagetest'
+include ':exceptionTest', ':exceptionTest2', ':imagetest', ':backlightapp'
