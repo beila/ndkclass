@@ -10,6 +10,11 @@ android {
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
+        ndk {
+            moduleName 'nativeapp'
+            abiFilters 'arm64-v8a'
+            ldLibs 'log', 'android'
+        }
     }
     buildTypes {
         release {
