@@ -5,8 +5,8 @@
 void* thread_func(void *arg) {
     int i;
     for(i = 0; i < 10; ++i) {
-	printf("\t%s\n", p);
-	sleep(1);
+		printf("\t%s\n", (char*)arg);
+		sleep(1);
     }
     return 0;
 }
