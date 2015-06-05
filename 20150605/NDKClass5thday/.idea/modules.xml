@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/NDKClass5thday.iml" filepath="$PROJECT_DIR$/NDKClass5thday.iml" />
       <module fileurl="file://$PROJECT_DIR$/nativeactivity/nativeactivity.iml" filepath="$PROJECT_DIR$/nativeactivity/nativeactivity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/threadtest/threadtest.iml" filepath="$PROJECT_DIR$/threadtest/threadtest.iml" />
     </modules>
   </component>
 </project>

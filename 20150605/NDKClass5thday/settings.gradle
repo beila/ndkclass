@@ -1,1 +1,1 @@
-include ':nativeactivity'
+include ':nativeactivity', ':threadtest'
