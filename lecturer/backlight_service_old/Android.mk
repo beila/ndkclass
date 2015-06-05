@@ -12,8 +12,7 @@ include $(BUILD_EXECUTABLE)
 
 # for backlight_client
 include $(CLEAR_VARS)
-LOCAL_MULTILIB := both
 LOCAL_SHARED_LIBRARIES := liblog 
 LOCAL_SRC_FILES := backlight_client.c binder.c
-LOCAL_MODULE := libbacklight
-include $(BUILD_SHARED_LIBRARY)
+LOCAL_MODULE := backlight_client 
+include $(BUILD_EXECUTABLE)

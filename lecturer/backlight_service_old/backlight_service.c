@@ -45,7 +45,8 @@ void backlight_on()
 
 void backlight_off()
 {
-	int backlight_fd = open("/sys/devices/platform/tegra-dsi-backlight.0/backlight/tegra-dsi-backlight.0/brightness", O_RDWR);
+	int backlight_fd =
+		open("/sys/devices/platform/tegra-dsi-backlight.0/backlight/tegra-dsi-backlight.0/brightness", O_RDWR);
 
 	printf("backlight_fd = %d", backlight_fd);
 	if (backlight_fd < 0) return;
